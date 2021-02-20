@@ -1,0 +1,4 @@
+C:\Users\lyyzz\Downloads\碩二\打工（短期）：VAS-RRP軟體開發\VASRRP_2020 (VB version)\vasrrpmin\obj\x86\Debug\yoyowork.vbprojAssemblyReference.cache
+C:\Users\lyyzz\Downloads\碩二\打工（短期）：VAS-RRP軟體開發\VASRRP_2020 (VB version)\vasrrpmin\obj\x86\Debug\yoyowork.vbproj.CoreCompileInputs.cache
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\x86\Debug\yoyowork.vbprojAssemblyReference.cache
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\x86\Debug\yoyowork.vbproj.CoreCompileInputs.cache

@@ -1,0 +1,11 @@
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\bin\vasrrp.dll.config
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\bin\vasrrp.dll
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\bin\vasrrp.pdb
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\bin\vasrrp.xml
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\Debug\vasrrp.vbprojAssemblyReference.cache
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\Debug\vasrrp.Resources.resources
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\Debug\vasrrp.vbproj.GenerateResource.cache
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\Debug\vasrrp.vbproj.CoreCompileInputs.cache
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\Debug\vasrrp.dll
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\Debug\vasrrp.xml
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\vasrrp\vasrrp\obj\Debug\vasrrp.pdb

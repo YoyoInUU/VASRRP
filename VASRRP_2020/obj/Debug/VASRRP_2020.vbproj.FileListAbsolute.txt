@@ -1,0 +1,11 @@
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\bin\vasrrp.dll.config
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\bin\vasrrp.dll
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\bin\vasrrp.pdb
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\bin\vasrrp.xml
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\obj\Debug\VASRRP_2020.vbprojAssemblyReference.cache
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\obj\Debug\vasrrp.Resources.resources
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\obj\Debug\VASRRP_2020.vbproj.GenerateResource.cache
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\obj\Debug\VASRRP_2020.vbproj.CoreCompileInputs.cache
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\obj\Debug\vasrrp.dll
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\obj\Debug\vasrrp.xml
+C:\Users\lyyzz\Downloads\碩二\打工(短期)VAS-RRP軟體開發\VASRRP_2020 (VB version)\VASRRP_2020\obj\Debug\vasrrp.pdb
