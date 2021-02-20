@@ -56,10 +56,10 @@ Partial Class _Default
 
             table1.Columns.Add("osn")
 
-
-
-
             table1.Columns.Add("rnds")
+
+            table1.Columns.Add("time_stamp")
+
 
             For i As Integer = 1 To table1.Rows.Count
                 table1.Rows(i - 1).Item("osn") = i

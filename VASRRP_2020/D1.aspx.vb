@@ -88,6 +88,7 @@ Partial Class D6
 
             CRow1(0)("score") = xbox1.Text
 
+            CRow1(0)("time_stamp") = DateTime.Now
 
             GridView1.DataSource = Session("stem")
             GridView1.DataBind()
