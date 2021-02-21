@@ -61,7 +61,7 @@
             <br>
 
 
-            <asp:Button ID="Button2" runat="server" Text="Next Page" />
+            <asp:Button ID="NextPage" runat="server" Text="Next Page" />
             </div>
     </form>
 
