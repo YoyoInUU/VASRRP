@@ -67,17 +67,16 @@
 
     <form id="form2" runat="server" visible="false">
         <div style="width: auto; height:auto; padding-left: 200px">
-        <input type="radio" name="gender" value="male" />男 &nbsp;
+            <input type="radio" name="gender" value="male" />男 &nbsp;
             <input type="radio" name="gender" value="female" />女 &nbsp;
             <input type="radio" name="gender" value="js" />第三性<br />
-        年齡：<input type="text" name="age" />歲<br />
-        目前教育背景：<input type="radio" name="education" value="high_school" />高中生 &nbsp;
+            年齡：<input type="text" name="age" />歲<br />
+            目前教育背景：<input type="radio" name="education" value="high_school" />高中生 &nbsp;
             <input type="radio" name="education" value="college" />大學生 &nbsp;
             <input type="radio" name="education" value="graduate_school" />研究生<br />
 
-        <input type="button" value="submit" />
-            </div>
-        <asp:HiddenField ID="HiddenField1" runat="server" />
+        <asp:Button ID="StartTest" runat="server" Text="Start Test" />
+        </div>
     </form>
 </body>
 </html>
