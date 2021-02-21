@@ -1,4 +1,6 @@
-﻿Imports myUtilityv4.LPT
+﻿
+Imports System.Data
+Imports myUtilityv4.LPT
 
 
 
@@ -6,14 +8,15 @@ Partial Class D6
     Inherits System.Web.UI.Page
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
-
+            Dim sqlgo As New sqlprocess
+            'Dim table1 As DataTable = sqlgo.RenderDataTableFromExcel("./Question_files/Q1".FileContent, 0, 0)
             If Not Session("stem") Is Nothing Then
                 Dim stemt As System.Data.DataTable
                 stemt = Session("stem")
 
 
                 If stemt.Columns.IndexOf("rnds") = 0 Then
-                    Response.Redirect("default.htm")
+                    Response.Redirect("Default.aspx")
                 End If
 
                 Dim allpages As Integer
@@ -23,10 +26,10 @@ Partial Class D6
                 Try
                     loadoption(stemt, nowpage)
                 Catch ex As Exception
-                    Response.Redirect("default.htm")
+                    Response.Redirect("Default.aspx")
                 End Try
             Else
-                Response.Redirect("default.htm")
+                Response.Redirect("Default.aspx")
 
             End If
 

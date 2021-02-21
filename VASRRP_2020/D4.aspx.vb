@@ -11,7 +11,7 @@ Partial Class D6
                 Dim stemt As System.Data.DataTable
                 stemt = Session("stem")
                 If stemt.Columns.IndexOf("rnds") = 0 Then
-                    '    Response.Redirect("default.htm")
+                    '    Response.Redirect("Default.aspx")
                 End If
                 Dim allpages As Integer
                 allpages = Session("allpage")
@@ -20,10 +20,10 @@ Partial Class D6
                 ' Try
                 loadoption(stemt, nowpage)
                 '  Catch ex As Exception
-                '     Response.Redirect("default.htm")
+                '     Response.Redirect("Default.aspx")
                 '  End Try
             Else
-                '  Response.Redirect("default.htm")
+                '  Response.Redirect("Default.aspx")
 
             End If
 
