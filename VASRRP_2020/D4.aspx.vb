@@ -1,6 +1,5 @@
 ﻿Imports myUtilityv4.LPT
-
-
+Imports System
 
 Partial Class D6
     Inherits System.Web.UI.Page
@@ -111,8 +110,6 @@ Partial Class D6
             xbox2.Text = "-1"
             xbox3.Text = "-1"
             xbox4.Text = "-1"
-
-
 
             If Session("allpage") > nowpages Then
                 Session("nowpage") = Session("nowpage") + 1
