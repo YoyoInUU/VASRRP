@@ -57,6 +57,13 @@ Partial Class D6
         Ln3.Text = stem2.Rows(2).Item("The Content Of Items")
         Ln4.Text = stem2.Rows(3).Item("The Content Of Items")
 
+
+        Button1.ToolTip = stem2.Rows(0).Item("Description")
+        Button2.ToolTip = stem2.Rows(1).Item("Description")
+        Button3.ToolTip = stem2.Rows(2).Item("Description")
+        Button4.ToolTip = stem2.Rows(3).Item("Description")
+
+
         HF_osn1.Value = stem2.Rows(0).Item("osn")
         HF_osn2.Value = stem2.Rows(1).Item("osn")
         HF_osn3.Value = stem2.Rows(2).Item("osn")
@@ -120,4 +127,5 @@ Partial Class D6
         End If
 
     End Sub
+
 End Class

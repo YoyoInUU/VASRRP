@@ -15,7 +15,7 @@
     <form id="form1" runat="server" visible="true">
         <h1 style="padding-left: 20px;">VAS-RRP 2020</h1>
 
-        <div style="width: auto; padding-left: 200px; padding-right: 200px">
+        <div style="width: auto; padding-left: 300px; padding-right: 300px">
             <td align="center"><span style="font-weight: bold">職業興趣探索—受試者 招募</span></td>
             <br>
             <br>

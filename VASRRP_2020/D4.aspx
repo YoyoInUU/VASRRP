@@ -150,8 +150,9 @@
                 // $.prompt("A:" + x1 + "<br/>B:" + x2 + "<br/>C:" + x3 + "<br/>D:" + x4 + "<br/>E:" + x5 + "<br/>F:" + x6 + "<br/>", { show: 'slideDown', prefix: 'jqismooth' });
             }
         });
-
+    
     });
+
 
 
 
@@ -175,10 +176,18 @@
 
     -->
     </script>
-    <style>
+
+    <style type="text/css">
         .boxtd {
             height: 65px;
             width: 60px;
+        }
+        .ui-tooltip {
+            padding: 10px 20px;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 0 0 7px black;
+            width: 700px;
         }
     </style>
 </head>
@@ -204,24 +213,35 @@
                         </td>
                         <td style="width: 600px;">
                             <asp:Label ID="Ln1" runat="server" Text="111" />
-
                         </td>
+                        <td>
+                            <asp:Button ID="Button1" runat="server" Text="說明" ToolTip="222" Enabled="false" style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color:gray; font-size:16px;"/>
+                            </td>
+
                     </tr>
                     <tr>
                         <td class="boxtd" id="bbox2">
                             <img src="VASRRP_files/sarrbox2.gif" alt="" class="dragitem" id="box2" style="position: absolute" />
                             <img src="VASRRP_files/sarrqbox2.gif" alt="" id="qbox2" style="display: none; position: absolute" />
                         </td>
+                        <td style="width: 600px;">
+                            <asp:Label ID="Ln2" runat="server" Text="111" />
+                        </td>
                         <td>
-                            <asp:Label ID="Ln2" runat="server" Text="111" /></td>
+                           <asp:Button ID="Button2" runat="server" Text="說明" ToolTip="222" Enabled="false" style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color:gray; font-size:16px;"/>
+                           </td>
                     </tr>
                     <tr>
                         <td class="boxtd" id="bbox3">
                             <img src="VASRRP_files/sarrbox3.gif" alt="" class="dragitem" id="box3" style="position: absolute" />
                             <img src="VASRRP_files/sarrqbox3.gif" alt="" id="qbox3" style="display: none; position: absolute" />
                         </td>
+                        <td style="width: 600px;">
+                            <asp:Label ID="Ln3" runat="server" Text="111" />
+                        </td>
                         <td>
-                            <asp:Label ID="Ln3" runat="server" Text="111" /></td>
+                            <asp:Button ID="Button3" runat="server" Text="說明" ToolTip="222" Enabled="false" style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color:gray; font-size:16px;"/>
+                           </td>
                     </tr>
                     <tr>
                         <td class="boxtd" id="bbox4">
@@ -229,13 +249,27 @@
                             <img src="VASRRP_files/sarrqbox4.gif" alt="" id="qbox4" style="display: none; position: absolute" />
                         </td>
                         <td>
-                            <asp:Label ID="Ln4" runat="server" Text="111" /></td>
-                    </tr>
+                            <asp:Label ID="Ln4" runat="server" Text="111" />
+                            </td>
+                        <td>
+                             <asp:Button ID="Button4" runat="server" Text="說明" ToolTip="222" Enabled="false" style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color:gray; font-size:16px;"/>
+             
+                        </td>
+                        <td>
+                            
+                            
+                           
+                            </td>
 
+                       
+                    </tr>
+                  
                 </table>
 
             </div>
             <div align="left" style="border: 0px solid green; padding-top: 90px; padding-left: 10px; width: 922px;">
+                <span style="font-weight: bold">0%</span>
+                <span style="font-weight: bold; padding-left: 850px">100%</span>
                 <img src="VASRRP_files/downa.jpg" id="Panelbar" alt="" />
             </div>
             <div style="width: 930px; border: 0px solid red;">

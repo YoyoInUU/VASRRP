@@ -7,22 +7,20 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" visible="false">
         <div>
-
-
-
-
             <hr />
             <asp:GridView ID="GridView1" runat="server">
             </asp:GridView>
             <hr />
-
-            <asp:Button ID="Button2" runat="server" Text="Back to VAS-RRP Home" />
-
-            <asp:Button ID="Button1" runat="server" Text="Save" />
-
+            <hr />
         </div>
     </form>
+
+    <form id="form2" runat="server" visible="true">
+        <p>這份問卷已結束，感謝您的填寫。</p>
+        <asp:Button ID="Save" runat="server" Text="Save" />
+    </form>
+
 </body>
 </html>
