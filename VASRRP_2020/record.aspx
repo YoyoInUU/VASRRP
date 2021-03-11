@@ -8,18 +8,10 @@
 </head>
 <body>
     <form id="form1" runat="server" visible="false">
-        <div>
-            <hr />
-            <asp:GridView ID="GridView1" runat="server">
-            </asp:GridView>
-            <hr />
-            <hr />
-        </div>
     </form>
 
     <form id="form2" runat="server" visible="true">
-        <p>這份問卷已結束，感謝您的填寫。</p>
-        <asp:Button ID="Save" runat="server" Text="Save" />
+        <p>這份問卷已結束，感謝您的填寫 :)</p>
     </form>
 
 </body>

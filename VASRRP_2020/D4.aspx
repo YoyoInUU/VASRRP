@@ -143,7 +143,7 @@
             //  var x5 = $("#xbox5").val();
             // var x6 = $("#xbox6").val();
             if (x1 == -1 || x2 == -1 || x3 == -1 || x4 == -1) {
-                $.prompt("Please complete answering all of the items", { show: 'slideDown', prefix: 'jqismooth' });
+                $.prompt("請完成全部選項再到下一頁！", { show: 'slideDown', prefix: 'jqismooth' });
                 return false;
             } else {
 

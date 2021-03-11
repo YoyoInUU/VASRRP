@@ -20,3 +20,14 @@ C:\Users\fdja1\Desktop\VASRRP\VASRRP_2020\obj\Debug\VASRRP_2020.vbproj.CoreCompi
 C:\Users\fdja1\Desktop\VASRRP\VASRRP_2020\obj\Debug\vasrrp.dll
 C:\Users\fdja1\Desktop\VASRRP\VASRRP_2020\obj\Debug\vasrrp.xml
 C:\Users\fdja1\Desktop\VASRRP\VASRRP_2020\obj\Debug\vasrrp.pdb
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\bin\vasrrp.dll.config
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\bin\vasrrp.dll
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\bin\vasrrp.pdb
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\bin\vasrrp.xml
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\obj\Debug\VASRRP_2020.vbprojAssemblyReference.cache
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\obj\Debug\vasrrp.Resources.resources
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\obj\Debug\VASRRP_2020.vbproj.GenerateResource.cache
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\obj\Debug\VASRRP_2020.vbproj.CoreCompileInputs.cache
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\obj\Debug\vasrrp.dll
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\obj\Debug\vasrrp.xml
+C:\Users\Yoyo\Desktop\VASRRP\VASRRP_2020\obj\Debug\vasrrp.pdb

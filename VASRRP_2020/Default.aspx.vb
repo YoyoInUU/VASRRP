@@ -3,97 +3,77 @@ Imports System.Data
 Imports myUtilityv4.LPT
 Imports System
 Imports System.Text
+Imports System.IO
 
 Partial Class _Default
     Inherits System.Web.UI.Page
 
-    'Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
-    '    Dim ddstr As String = ""
-
-
-    '    ddstr = String.Format("d{9}.htm?a={0}&b={1}&c={2}&d={3}&e={4}&f={5}&l={6}&r={7}&t={8}", bcont1.Text, bcont2.Text, bcont3.Text, bcont4.Text, bcont5.Text, bcont6.Text, Lanchor.Text, Ranchor.Text, TB_content.Text, DD_nums.SelectedValue)
-
-    '    Response.Redirect(ddstr)
-
-    'End Sub
-
-
-    Protected Sub Login1_Authenticate(sender As Object, e As AuthenticateEventArgs)
-        e.Authenticated = False
-        If sender.UserName = "weifone4122121@gmail.com" & sender.Password = "hay3654518" Then
-            e.Authenticated = True
-        End If
-    End Sub
-
-
-    Protected Sub Button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.Click
-
-
-        'Session("Ltext") = Lanchor2.Text
-        'Session("Rtext") = Ranchor2.Text
-
-
-        If (fuUpload.HasFile) Then
-            ' Dim table As DataTable = NPOI.DataTableRenderToExcel.RenderDataTableFromExcel(fuUpload.FileContent, 1, 0)
-
-            Dim sqlgo As New sqlprocess
-
-            Dim table1 As DataTable = sqlgo.RenderDataTableFromExcel(fuUpload.FileContent, 0, 0)
-
-
-            Dim p1, p2 As Integer
-
-
-            p1 = table1.Rows.Count
-            p2 = p1 / DD_nums2.SelectedValue
-
-
-            Session("optcount") = p1
-            Session("allpage") = p2
-
-
-            table1.Columns.Add("score")
-
-            table1.Columns.Add("osn")
-
-            table1.Columns.Add("rnds")
-
-            table1.Columns.Add("time_stamp")
-
-
-            For i As Integer = 1 To table1.Rows.Count
-                table1.Rows(i - 1).Item("osn") = i
-
-                table1.Rows(i - 1).Item("rnds") = Rnd()
-            Next
-
-
-            Session("stem") = table1
-
-            Session("nowpage") = 1
-
-            'Label1.Text = String.Format("p1={0},p2={1},optcoun={2}", p1, p2, DD_nums.SelectedValue)
-
-
-
-            ' Response.Redirect("D6.aspx")
-
-            Dim ddstr As String = ""
-            ddstr = String.Format("D{0}.aspx", DD_nums2.SelectedValue)
-
-            Response.Redirect(ddstr)
-
-        End If
-
-
-
-
-
-
+    Protected Sub NextPage_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles NextPage.Click
+        form1.Visible = False
+        form2.Visible = True
 
     End Sub
 
+    Protected Sub StartTest_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles StartTest.Click
+        Dim sqlgo As New sqlprocess
 
+        Dim fs As FileStream = New FileStream(AppDomain.CurrentDomain.BaseDirectory + "\ex4.xls", FileMode.Open)
+
+        Dim table1 As DataTable = sqlgo.RenderDataTableFromExcel(fs, 0, 0)
+
+
+        ' optcount = number of options in .xls
+        Session("optcount") = table1.Rows.Count
+        ' allpage (i.e., total number of pages) = optcount / [number of options per page]
+        Session("allpage") = table1.Rows.Count / 4
+
+
+        table1.Columns.Add("score")
+
+        table1.Columns.Add("osn")
+
+        table1.Columns.Add("subject_data")
+
+        table1.Columns.Add("rnds")
+
+        table1.Columns.Add("time_stamp")
+
+        If BoyRadio.Checked Then
+            table1.Rows(0).Item("subject_data") = "男"
+
+        ElseIf GirlRadio.Checked Then
+            table1.Rows(0).Item("subject_data") = "女"
+
+        ElseIf OtherRadio.Checked Then
+            table1.Rows(0).Item("subject_data") = "其他"
+
+        End If
+
+        If HighScoolRadio.Checked Then
+            table1.Rows(1).Item("subject_data") = "高中"
+
+        ElseIf ColledgeRadio.Checked Then
+            table1.Rows(1).Item("subject_data") = "大學"
+
+        ElseIf GraduateRadio.Checked Then
+            table1.Rows(1).Item("subject_data") = "研究生"
+
+        End If
+
+        For i As Integer = 1 To table1.Rows.Count
+            table1.Rows(i - 1).Item("osn") = i
+
+            table1.Rows(i - 1).Item("rnds") = Rnd()
+        Next
+
+
+        Session("stem") = table1
+
+        Session("nowpage") = 1
+
+        Response.Redirect("D4.aspx")
+
+    End Sub
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
@@ -106,18 +86,6 @@ Partial Class _Default
             Session("optcount") = Nothing
             Session("allpage") = Nothing
 
-
-
         End If
     End Sub
-
-
-
-
-
-
-
-
-
-
 End Class
