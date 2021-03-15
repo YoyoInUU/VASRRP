@@ -4,19 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>VAS-RRP Generator 2020</title>
-    <script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
-
+    <title>職業興趣探索—受試者 招募</title>
 
 </head>
 <body>
 
-
     <form id="form1" runat="server" visible="true">
-        <h1 style="padding-left: 20px;">VAS-RRP 2020</h1>
+        <h1 style="padding-left: 20px;">職業興趣探索—受試者 招募</h1>
 
-        <div style="width: auto; padding-left: 20px; padding-right: 800px">
-            <td align="center"><span style="font-weight: bold">職業興趣探索—受試者 招募</span></td>
+        <div style="width: auto; padding-left: 20px; padding-right: 500px">
             <br>
             <br>
             你了解自我的職業興趣嗎？想在進入職場前了解自我興趣取向嗎？現在是個絕佳的機會！
@@ -61,30 +57,34 @@
             <br>
 
 
-            <asp:Button ID="NextPage" runat="server" Text="Next Page" />
+            <asp:Button ID="NextPage" runat="server" Text="下一頁" />
         </div>
     </form>
 
     <form id="form2" runat="server" visible="false">
-        <div style="width: auto; height: auto; padding-left: 200px">
+        <div style="width: auto; height: auto; padding-left: 100px">
 
-            <asp:RadioButton ID="BoyRadio" runat="server" Text="男&nbsp" GroupName="gender" Checked="true"/>
+            <asp:RadioButton ID="BoyRadio" runat="server" Text="男&nbsp" GroupName="gender" Checked="true" />
             <asp:RadioButton ID="GirlRadio" runat="server" Text="女&nbsp" GroupName="gender" />
             <asp:RadioButton ID="OtherRadio" runat="server" Text="其他&nbsp" GroupName="gender" />
 
             <br />
 
 
-            年齡: <input type="text" name="age" /> 歲 <br />
-            電子信箱 (發放電子禮卷用): <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox> <br />
-           
+            年齡:
+            <asp:TextBox ID="AgeTextBox" runat="server"></asp:TextBox>
+            歲&nbsp;<br />
+            電子信箱 (發放電子禮卷用):
+            <asp:TextBox ID="EmailTextBox" runat="server"></asp:TextBox>
+            <br />
+
             目前教育背景：
             <asp:RadioButton ID="HighScoolRadio" runat="server" Text="高中&nbsp" GroupName="education" Checked="true" />
             <asp:RadioButton ID="ColledgeRadio" runat="server" Text="大學&nbsp" GroupName="education" />
             <asp:RadioButton ID="GraduateRadio" runat="server" Text="研究所&nbsp" GroupName="education" />
 
 
-            <asp:Button ID="StartTest" runat="server" Text="Start Test" />
+            <asp:Button ID="StartTest" runat="server" Text="下一頁" />
 
         </div>
     </form>

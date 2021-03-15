@@ -61,6 +61,13 @@ Partial Class D6
         Ln5.Text = stem2.Rows(4).Item("The Content Of Items")
         Ln6.Text = stem2.Rows(5).Item("The Content Of Items")
 
+        Button1.ToolTip = stem2.Rows(0).Item("Description")
+        Button2.ToolTip = stem2.Rows(1).Item("Description")
+        Button3.ToolTip = stem2.Rows(2).Item("Description")
+        Button4.ToolTip = stem2.Rows(3).Item("Description")
+        Button5.ToolTip = stem2.Rows(4).Item("Description")
+        Button6.ToolTip = stem2.Rows(5).Item("Description")
+
         HF_osn1.Value = stem2.Rows(0).Item("osn")
         HF_osn2.Value = stem2.Rows(1).Item("osn")
         HF_osn3.Value = stem2.Rows(2).Item("osn")
@@ -69,12 +76,12 @@ Partial Class D6
         HF_osn6.Value = stem2.Rows(5).Item("osn")
 
 
-        ' GridView1.DataSource = Session("stem")
-        ' GridView1.DataBind()
+        GridView1.DataSource = Session("stem")
+        GridView1.DataBind()
 
 
-        ' GridView2.DataSource = stem2
-        ' GridView2.DataBind()
+        GridView2.DataSource = stem2
+        GridView2.DataBind()
 
 
 
@@ -114,8 +121,9 @@ Partial Class D6
             CRow5(0)("time_stamp") = DateTime.Now
             CRow6(0)("time_stamp") = DateTime.Now
 
-            GridView1.DataSource = Session("stem")
-            GridView1.DataBind()
+
+            'GridView1.DataSource = Session("stem")
+            'GridView1.DataBind()
 
 
             xbox1.Text = "-1"

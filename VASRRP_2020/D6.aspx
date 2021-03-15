@@ -58,7 +58,7 @@
                 if (xx < xx1) {
                     //bat_start 且 小於拖曳物件一半寬度
                     $(element).css("left", xx1); //下面圖案左移一半大小
-                    $("#x" + element.id).val(0);
+                    $("#x" + element.id).val(0.001);
 
 
 
@@ -67,7 +67,7 @@
                 } else if (xx > xx1 + 864) {
                     //bar_end
                     $(element).css("left", xx1 + 864); //下面圖案左移一半大小
-                    $("#x" + element.id).val(1);
+                    $("#x" + element.id).val(0.999);
 
 
                     $("#xxx1").val(xx);
@@ -101,7 +101,7 @@
 
                         if ($("#x" + element.id).val() != "-1") {
                             if (Math.abs($("#x" + element.id).val() - $("#xbox" + i).val()) < 0.01) {
-                                $.prompt(" " + getchar(i) + " and " + getchar(element.id.toString().charAt(3)) + " overlap", { show: 'slideDown', prefix: 'jqismooth' });
+                                $.prompt(" " + getchar(i) + " 和 " + getchar(element.id.toString().charAt(3)) + " 重疊了，請再試一次！", { show: 'slideDown', prefix: 'jqismooth' });
                                 $(element).css("left", $("#b" + element.id).offset().left + 8);
                                 $(element).css("top", $("#b" + element.id).offset().top + 8);
                                 $("#x" + element.id).val(-1);
@@ -143,7 +143,7 @@
             var x5 = $("#xbox5").val();
             var x6 = $("#xbox6").val();
             if (x1 == -1 || x2 == -1 || x3 == -1 || x4 == -1 || x5 == -1 || x6 == -1) {
-                $.prompt("Please complete answering all of the items", { show: 'slideDown', prefix: 'jqismooth' });
+                $.prompt("請完成全部選項再到下一頁！", { show: 'slideDown', prefix: 'jqismooth' });
                 return false;
             } else {
 
@@ -206,6 +206,9 @@
                             <asp:Label ID="Ln1" runat="server" Text="111" />
 
                         </td>
+                        <td>
+                            <asp:Button ID="Button1" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                        </td>
                     </tr>
                     <tr>
                         <td class="boxtd" id="bbox2">
@@ -214,6 +217,9 @@
                         </td>
                         <td>
                             <asp:Label ID="Ln2" runat="server" Text="111" /></td>
+                        <td>
+                            <asp:Button ID="Button2" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                        </td>
                     </tr>
                     <tr>
                         <td class="boxtd" id="bbox3">
@@ -222,6 +228,10 @@
                         </td>
                         <td>
                             <asp:Label ID="Ln3" runat="server" Text="111" /></td>
+
+                        <td>
+                            <asp:Button ID="Button3" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                        </td>
                     </tr>
                     <tr>
                         <td class="boxtd" id="bbox4">
@@ -230,6 +240,9 @@
                         </td>
                         <td>
                             <asp:Label ID="Ln4" runat="server" Text="111" /></td>
+                        <td>
+                            <asp:Button ID="Button4" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                        </td>
                     </tr>
                     <tr>
                         <td class="boxtd" id="bbox5">
@@ -238,6 +251,9 @@
                         </td>
                         <td>
                             <asp:Label ID="Ln5" runat="server" Text="111" /></td>
+                        <td>
+                            <asp:Button ID="Button5" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                        </td>
                     </tr>
                     <tr>
                         <td class="boxtd" id="bbox6">
@@ -246,11 +262,16 @@
                         </td>
                         <td>
                             <asp:Label ID="Ln6" runat="server" Text="111" /></td>
+                        <td>
+                            <asp:Button ID="Button6" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                        </td>
                     </tr>
                 </table>
 
             </div>
             <div align="left" style="border: 0px solid green; padding-top: 90px; padding-left: 10px; width: 922px;">
+                <span style="font-weight: bold">0%</span>
+                <span style="font-weight: bold; padding-left: 850px">100%</span>
                 <img src="VASRRP_files/downa.jpg" id="Panelbar" alt="" />
             </div>
             <div style="width: 930px; border: 0px solid red;">
@@ -280,12 +301,12 @@
 
 
         <hr />
-        <asp:Button ID="Bun_submit" runat="server" Text="Submit" Style="width: 80px; height: 30px;" />
+        <asp:Button ID="Bun_submit" runat="server" Text="下一頁" Style="width: 80px; height: 30px;" />
 
-        <asp:GridView ID="GridView1" runat="server" Visible="true">
+        <asp:GridView ID="GridView1" runat="server" Visible="false">
         </asp:GridView>
 
-        <asp:GridView ID="GridView2" runat="server" Visible="true">
+        <asp:GridView ID="GridView2" runat="server" Visible="false">
         </asp:GridView>
 
         <div style="display: none">

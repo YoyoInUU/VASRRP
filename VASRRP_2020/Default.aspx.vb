@@ -17,7 +17,7 @@ Partial Class _Default
     Protected Sub StartTest_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles StartTest.Click
         Dim sqlgo As New sqlprocess
 
-        Dim fs As FileStream = New FileStream(AppDomain.CurrentDomain.BaseDirectory + "\ex4.xls", FileMode.Open)
+        Dim fs As FileStream = New FileStream(AppDomain.CurrentDomain.BaseDirectory + "\Questions_files\Q6.xls", FileMode.Open)
 
         Dim table1 As DataTable = sqlgo.RenderDataTableFromExcel(fs, 0, 0)
 
@@ -25,7 +25,7 @@ Partial Class _Default
         ' optcount = number of options in .xls
         Session("optcount") = table1.Rows.Count
         ' allpage (i.e., total number of pages) = optcount / [number of options per page]
-        Session("allpage") = table1.Rows.Count / 4
+        Session("allpage") = table1.Rows.Count / 6
 
 
         table1.Columns.Add("score")
@@ -60,6 +60,16 @@ Partial Class _Default
 
         End If
 
+        If AgeTextBox.Text.Length > 0 Then
+            table1.Rows(2).Item("subject_data") = "Age=" + AgeTextBox.Text
+        End If
+
+        If EmailTextBox.Text.Length > 0 Then
+            table1.Rows(3).Item("subject_data") = "Email=" + EmailTextBox.Text
+        End If
+
+
+
         For i As Integer = 1 To table1.Rows.Count
             table1.Rows(i - 1).Item("osn") = i
 
@@ -71,7 +81,7 @@ Partial Class _Default
 
         Session("nowpage") = 1
 
-        Response.Redirect("D4.aspx")
+        Response.Redirect("D6.aspx")
 
     End Sub
 
