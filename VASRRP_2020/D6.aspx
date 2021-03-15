@@ -38,6 +38,7 @@
             var xx1 = $("#Panelbar").offset().left;  //18
             var yy1 = $("#Panelbar").offset().top;   //639
 
+
             // $("#xxx1").val(xx1);
             //  $("#xxx2").val(yy1);
 
@@ -202,12 +203,12 @@
                             <img src="VASRRP_files/sarrbox1.gif" alt="" class="dragitem" id="box1" style="position: absolute" />
                             <img src="VASRRP_files/sarrqbox1.gif" alt="" id="qbox1" style="display: none; position: absolute" />
                         </td>
-                        <td style="width: 600px;">
+                        <td style="width: 300px;">
                             <asp:Label ID="Ln1" runat="server" Text="111" />
 
                         </td>
                         <td>
-                            <asp:Button ID="Button1" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                            <asp:Button ID="Button1" runat="server" Text="職業內容" ToolTip="222" Enabled="false" Style="width: 77px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
                         </td>
                     </tr>
                     <tr>
@@ -218,7 +219,7 @@
                         <td>
                             <asp:Label ID="Ln2" runat="server" Text="111" /></td>
                         <td>
-                            <asp:Button ID="Button2" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                            <asp:Button ID="Button2" runat="server" Text="職業內容" ToolTip="222" Enabled="false" Style="width: 77px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
                         </td>
                     </tr>
                     <tr>
@@ -230,7 +231,7 @@
                             <asp:Label ID="Ln3" runat="server" Text="111" /></td>
 
                         <td>
-                            <asp:Button ID="Button3" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                            <asp:Button ID="Button3" runat="server" Text="職業內容" ToolTip="222" Enabled="false" Style="width: 77px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
                         </td>
                     </tr>
                     <tr>
@@ -241,7 +242,7 @@
                         <td>
                             <asp:Label ID="Ln4" runat="server" Text="111" /></td>
                         <td>
-                            <asp:Button ID="Button4" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                            <asp:Button ID="Button4" runat="server" Text="職業內容" ToolTip="222" Enabled="false" Style="width: 77px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
                         </td>
                     </tr>
                     <tr>
@@ -252,7 +253,7 @@
                         <td>
                             <asp:Label ID="Ln5" runat="server" Text="111" /></td>
                         <td>
-                            <asp:Button ID="Button5" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                            <asp:Button ID="Button5" runat="server" Text="職業內容" ToolTip="222" Enabled="false" Style="width: 77px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
                         </td>
                     </tr>
                     <tr>
@@ -263,7 +264,7 @@
                         <td>
                             <asp:Label ID="Ln6" runat="server" Text="111" /></td>
                         <td>
-                            <asp:Button ID="Button6" runat="server" Text="說明" ToolTip="222" Enabled="false" Style="width: 55px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
+                            <asp:Button ID="Button6" runat="server" Text="職業內容" ToolTip="222" Enabled="false" Style="width: 77px; height: 34px; padding: 5px; text-align: center; border-radius: 4px; color: gray; font-size: 16px;" />
                         </td>
                     </tr>
                 </table>
@@ -272,7 +273,8 @@
             <div align="left" style="border: 0px solid green; padding-top: 90px; padding-left: 10px; width: 922px;">
                 <span style="font-weight: bold">0%</span>
                 <span style="font-weight: bold; padding-left: 850px">100%</span>
-                <img src="VASRRP_files/downa.jpg" id="Panelbar" alt="" />
+                <img src="VASRRP_files/downa_upper.jpg" id="Panelbar" alt="" />
+                <img src="VASRRP_files/downa_bottom.jpg" id="Panelbar2" alt="" />
             </div>
             <div style="width: 930px; border: 0px solid red;">
                 <table width="100%" border="0">
