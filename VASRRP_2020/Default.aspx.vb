@@ -15,6 +15,7 @@ Partial Class _Default
     End Sub
 
     Protected Sub StartTest_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles StartTest.Click
+
         Dim sqlgo As New sqlprocess
 
         Dim fs As FileStream = New FileStream(AppDomain.CurrentDomain.BaseDirectory + "\Questions_files\Q6.xls", FileMode.Open)
@@ -86,6 +87,11 @@ Partial Class _Default
     End Sub
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+        HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache)
+        HttpContext.Current.Response.Cache.SetNoServerCaching()
+        HttpContext.Current.Response.Cache.SetNoStore()
+
         If Not IsPostBack Then
 
             Session("Ltext") = Nothing

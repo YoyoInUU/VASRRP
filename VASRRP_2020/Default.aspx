@@ -72,10 +72,10 @@
 
 
             年齡:
-            <asp:TextBox ID="AgeTextBox" runat="server"></asp:TextBox>
+            <asp:TextBox ID="AgeTextBox" runat="server" required></asp:TextBox>
             歲&nbsp;<br />
             電子信箱 (發放電子禮卷用):
-            <asp:TextBox ID="EmailTextBox" runat="server"></asp:TextBox>
+            <asp:TextBox ID="EmailTextBox" runat="server" required></asp:TextBox>
             <br />
 
             目前教育背景：

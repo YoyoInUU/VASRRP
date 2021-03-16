@@ -6,6 +6,11 @@ Partial Class D6
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+        HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache)
+        HttpContext.Current.Response.Cache.SetNoServerCaching()
+        HttpContext.Current.Response.Cache.SetNoStore()
+
         If Not IsPostBack Then
 
             If Not Session("stem") Is Nothing Then
