@@ -5,6 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
+    <script type="text/javascript"> 
+        /*To retain on the same view on Back Click*/
+        history.pushState(null, null, window.location.href);
+        window.addEventListener('popstate', function (event) {
+            history.pushState(null, null, window.location.href);
+            event.preventDefault();
+        });
+
+    </script>
+
 </head>
 <body>
     <form id="form1" runat="server" visible="false">

@@ -14,7 +14,14 @@
     <link href="css/impromptu.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript">
-<!--
+
+    /*To retain on the same view on Back Click*/
+    history.pushState(null, null, window.location.href);
+    window.addEventListener('popstate', function (event) {
+        history.pushState(null, null, window.location.href);
+        event.preventDefault();
+    });
+
     $(function () {
 
         document.onselectstart = new Function("event.returnValue=false;"); //禁止選取
